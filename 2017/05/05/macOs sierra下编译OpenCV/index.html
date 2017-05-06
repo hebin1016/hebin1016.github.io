@@ -76,7 +76,7 @@ make[2]: *** [modulesideoio/CMakeFiles/opencv_videoio.dir/src/cap_qtkit.mm.o] Er
 make[1]: *** [modulesideoio/CMakeFiles/opencv_videoio.dir/all] Error 2
 
 make: *** [all] Error 2
-</code></pre><p>百度了下，大概是说mac系统升级后QTKit有改动，Opencv找不到QTKit.h。解决方法是：下载<a href="/source/zip/QTKit.zip">QTKit.zip</a>,解压之后拷贝到opencv-2.4.9/modules/highgui/src中再make</p>
+</code></pre><p>百度了下，大概是说mac系统升级后QTKit有改动，Opencv找不到QTKit.h。解决方法是：下载<a href="https://github.com/hebin1016/hebin1016.github.io/tree/master/zip/QTKit.zip" target="_blank" rel="external">QTKit.zip</a>,解压之后拷贝到opencv-2.4.9/modules/highgui/src中再make</p>
 <p>2.</p>
 <pre><code>opencv-2.4.9/modules/legacy/src/calibfilter.cpp:98:9: error:
       comparison of array &apos;this-&gt;latestPoints&apos; not equal to a null pointer is
